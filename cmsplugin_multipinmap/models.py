@@ -83,7 +83,7 @@ class Map(CMSPlugin):
 
 class Pin(models.Model):
     name = models.CharField(_("name"), max_length=50)
-    map_plugin = models.ForeignKey(Map, related_name="pins")
+    map_plugin = models.ForeignKey(Map, related_name="pins", on_delete=models.CASCADE)
 
     street = models.CharField(_("street"), max_length=100, null=True, blank=True)
     postal_code = models.CharField(_("postal code"), max_length=10)
