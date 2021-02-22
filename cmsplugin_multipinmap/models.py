@@ -10,7 +10,7 @@ from geopy.geocoders import Here
 
 
 def get_geolocation(street: str, postal_code: str, city: str) -> dict:
-    geolocator = Here(settings.HERE_APP_ID, settings.HERE_APP_CODE)
+    geolocator = Here(apikey=settings.HERE_API_KEY)
     location = geolocator.geocode(" ".join([street, postal_code, city]))
     if location:
         return {"lat": location.latitude, "lng": location.longitude}
