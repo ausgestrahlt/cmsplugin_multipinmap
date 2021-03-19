@@ -27,7 +27,7 @@ class Map(CMSPlugin):
     leaflet_tile_url = models.CharField(
         _("tile url"),
         max_length=255,
-        default="http://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png",
+        default="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png",
     )
 
     height = models.IntegerField(
