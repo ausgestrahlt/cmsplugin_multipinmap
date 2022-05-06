@@ -107,7 +107,7 @@ class Pin(models.Model):
         ("blackIcon", _("black")),
     )
 
-    pin_color = models.CharField(max_length=20, choices=COLOR_CHOICES)
+    pin_color = models.CharField(max_length=50, choices=COLOR_CHOICES)
 
     lat = models.DecimalField(
         _("lat"), null=True, blank=True, decimal_places=6, max_digits=10
