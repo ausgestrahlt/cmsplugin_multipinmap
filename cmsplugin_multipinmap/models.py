@@ -98,9 +98,13 @@ class Pin(models.Model):
 
     COLOR_CHOICES = (
         ("redIcon", _("red")),
+        ("redIconBlackBorder", _("red (black border)")),
         ("blueIcon", _("blue")),
         ("greenIcon", _("green")),
         ("yellowIcon", _("yellow")),
+        ("yellowIconBlackBorder", _("yellow (black border)")),
+        ("grayIcon", _("gray")),
+        ("blackIcon", _("black")),
     )
 
     pin_color = models.CharField(max_length=20, choices=COLOR_CHOICES)
