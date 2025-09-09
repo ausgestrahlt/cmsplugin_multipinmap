@@ -5,7 +5,7 @@ from django.contrib import admin
 from cms.plugin_pool import plugin_pool
 from cms.plugin_base import CMSPluginBase
 
-from django.utils.translation import ugettext as _
+from django.utils.translation import gettext_lazy as _
 
 from .models import Map, Pin
 
